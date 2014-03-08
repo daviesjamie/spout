@@ -1,0 +1,25 @@
+# virtualenv ignores
+.venv
+env/
+
+# Ignore private credentials
+oauth.json
+
+# Ignore Pycharm project
+.idea/
+
+# Python ignores
+*.pyc
+
+# Latex ignores
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*blx.bib
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.tdo
