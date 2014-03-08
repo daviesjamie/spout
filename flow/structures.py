@@ -7,7 +7,6 @@ class Operation(object):
     """
     Defines an operation that can be applied to items in a stream.
     """
-
     @abc.abstractmethod
     def perform(self, obj):
         pass
@@ -18,7 +17,6 @@ class Predicate(object):
     Used to apply a boolean test to items in a stream, to determine if it meets some set
     criteria.
     """
-
     @abc.abstractmethod
     def test(self, obj):
         pass
@@ -28,7 +26,6 @@ class Function(object):
     """
     Applies a function to items in a stream, producing an appropriate result.
     """
-
     @abc.abstractmethod
     def apply(self, input):
         pass
@@ -41,6 +38,8 @@ class BufferedQueue(object):
     requested from the queue and no items are present, then the system waits for an item to be
     added before returning.
     """
+
+    __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
     def offer(self, item):

@@ -1,9 +1,9 @@
-from flow.structures import Operation, Predicate
+from structures import Operation, Predicate
 
 
 class PrintOperation(Operation):
     """
-    Simple operation to print whatever input is supplied. Used for testing purposes only.
+    Simple operation to print whatever input is supplied.
     """
     def perform(self, obj):
         print obj
@@ -11,7 +11,7 @@ class PrintOperation(Operation):
 
 class TruePredicate(Predicate):
     """
-    Simple predicate that always returns True. Used for testing purposes only.
+    Simple predicate that always returns True.
     """
     def test(self, obj):
         return True
@@ -20,7 +20,6 @@ class TruePredicate(Predicate):
 class NullOperation(Operation):
     """
     An empty operation that does nothing, it is simply used to pull objects through the stream.
-    Used for testing purposes only.
     """
     def perform(self, obj):
         pass
