@@ -18,7 +18,7 @@ The items in one stream can me "mapped" to another stream. This is done by
 applying a supplied `Function` to each item in the input stream, to produce
 another output stream.
 
-```
+```python
 stream.map(Function)
 ```
 
@@ -28,7 +28,7 @@ contains items that match a given criteria. This is done by using a supplied
 `Predicate` to test each item in the input stream, and copies it to the output
 stream if it passes the test criteria.
 
-```
+```python
 stream.filter(Predicate)
 ```
 
@@ -37,7 +37,7 @@ The items in a stream are used in some calculations or functionality that
 provides no further output to the stream. This is done by applying the supplied
 Operation to each item in the stream.
 
-```
+```python
 stream.for_each(Operation)
 ```
 
@@ -55,7 +55,7 @@ Some existing examples of stream data sources can by found in `sources.py`.
 
 For example, to create a `Stream` out of the lines in a plain text file:
 
-```
+```python
 from flow.sources import FileInputStream
 s = FileInputStream("test.txt")
 ```
@@ -68,7 +68,7 @@ For example, to print out all the lines in a text file that start with a digit,
 but with the digit stripped, we can create our own `Predicate` and `Function`
 and pass these to the `.filter()` and `.map()` functions:
 
-```
+```python
 from flow.sources import FileInputStream
 from flow.structs import Function, Predicate
 from flow.utils import PrintOperation
