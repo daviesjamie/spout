@@ -10,16 +10,3 @@ oauth.json
 
 # Python ignores
 *.pyc
-
-# Latex ignores
-*.aux
-*.bbl
-*.blg
-*.log
-*.out
-*.toc
-*blx.bib
-*.run.xml
-*.fdb_latexmk
-*.fls
-*.tdo
