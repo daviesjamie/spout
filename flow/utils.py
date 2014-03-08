@@ -1,4 +1,4 @@
-from structures import Operation, Predicate
+from structs import Operation, Predicate
 
 
 class PrintOperation(Operation):
