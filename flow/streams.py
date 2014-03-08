@@ -1,9 +1,9 @@
 import abc
 
 
-class AbstractStream(object):
+class Stream(object):
     """
-    Abstract implementation of a read-only data stream.
+    Abstract implementation of a data stream.
     """
 
     __metaclass__ = abc.ABCMeta
@@ -55,7 +55,7 @@ class AbstractStream(object):
         pass
 
 
-class FilterStream(AbstractStream):
+class FilterStream(Stream):
     """
     A stream created by applying a filter (in the form of a Predicate) to another stream.
     """
@@ -86,7 +86,7 @@ class FilterStream(AbstractStream):
         return to_return
 
 
-class MapStream(AbstractStream):
+class MapStream(Stream):
     """
     A stream created by applying a Function to the elements in another stream.
     """
@@ -102,9 +102,9 @@ class MapStream(AbstractStream):
         return self.function.apply(self.source.next())
 
 
-class BufferedStream(AbstractStream):
+class BufferedStream(Stream):
     """
-    Base implementation of an AbstractStream that uses a BufferedQueue as its internal buffer.
+    Implementation of a Stream that uses a BufferedQueue as its internal buffer.
 
     This class is designed for use with live data sources that may produce data faster than it
     can be consumed, as the internal BufferedQueue will drop items that aren't consumed (i.e,
