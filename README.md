@@ -47,13 +47,13 @@ Usage
 
 To use Flow, you first need to create an input data stream. A data stream is simply an
 instantiation of a `Stream` or any of its children (which can be found in the
-`streams.py` file). The `Stream` class has been specifically designed so that it
+`streams.py` file). The Stream class has been specifically designed so that it
 is easy to extend and wrap around currently existing data sources that you might
 have, such as files or databases.
 
 Some existing examples of stream data sources can by found in `sources.py`.
 
-For example, to create a `Stream` out of the lines in a plain text file:
+For example, to create a Stream out of the lines in a plain text file:
 
 ```python
 from flow.sources import FileInputStream
@@ -61,11 +61,11 @@ s = FileInputStream("test.txt")
 ```
 
 Now that you have your data in a stream, you simply have to process it! This can
-be done by creating and using your own `Function`s, `Predicate`s or `Operation`s
+be done by creating and using your own Functions, Predicates or Operations
 (see above).
 
 For example, to print out all the lines in a text file that start with a digit,
-but with the digit stripped, we can create our own `Predicate` and `Function`
+but with the digit stripped, we can create our own Predicate and Function
 and pass these to the `.filter()` and `.map()` functions:
 
 ```python
