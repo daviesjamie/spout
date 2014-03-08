@@ -9,7 +9,7 @@ consumption of live data sources in mind.
 How it works
 ------------
 
-At the heart of Flow is the concept of a Stream (which is implemented as an
+At the heart of Flow is the concept of a Stream (which is defined in an
 abstract `Stream` class). This defines the basic operations that can be
 performed upon a data stream:
 
@@ -90,5 +90,3 @@ s \
     .map(StripFirstChar()) \
     .for_each(PrintOperation())
 ```
-
-It's that simple!
