@@ -19,7 +19,8 @@ class TruePredicate(Predicate):
 
 class NullOperation(Operation):
     """
-    An empty operation that does nothing, it is simply used to pull objects through the stream.
+    An empty operation that does nothing, it is simply used to 'pull' objects through the
+    previous operations in the stream pipeline.
     """
     def perform(self, obj):
         pass
