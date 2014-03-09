@@ -47,11 +47,11 @@ Usage
 
 To use Flow, you first need to create an input data stream. A data stream is simply an
 instantiation of a `Stream` or any of its children (which can be found in the
-[`streams.py`](../blob/master/flow/streams.py) file). The Stream class has been specifically designed so that it
+[`streams.py`](https://github.com/daviesjamie/flow/blob/master/flow/streams.py) file). The Stream class has been specifically designed so that it
 is easy to extend and wrap around currently existing data sources that you might
 have, such as files or databases.
 
-Some existing examples of stream data sources can by found in [`sources.py`](../blob/master/flow/sources.py).
+Some existing examples of stream data sources can by found in [`sources.py`](https://github.com/daviesjamie/flow/blob/master/flow/sources.py).
 
 For example, to create a Stream out of the lines in a plain text file:
 
