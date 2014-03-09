@@ -1,5 +1,5 @@
 """
-    flow
+    spout
     ====
 
     A simple framework that makes it easy to work with data streams in Python.
