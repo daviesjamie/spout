@@ -5,6 +5,8 @@ Spout is a small and simple framework that makes it easy to work with data
 streams in Python. In particular, Spout was designed with the processing and
 consumption of live data sources in mind.
 
+[pypi.python.org/pypi/spout/](https://pypi.python.org/pypi/spout/)
+
 
 How it works
 ------------
@@ -94,7 +96,7 @@ s \
 Installation
 ------------
 
-Spout is available in the Python Package Index (PyPI), and so the easiest way to
+Spout is available in the [Python Package Index (PyPI)](https://pypi.python.org/pypi/spout/), and so the easiest way to
 install it is through `pip`:
 
 ```
