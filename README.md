@@ -90,3 +90,20 @@ s \
     .map(StripFirstChar()) \
     .for_each(PrintOperation())
 ```
+
+Installation
+------------
+
+Spout is available in the Python Package Index (PyPI), and so the easiest way to
+install it is through `pip`:
+
+```
+$ pip install spout
+```
+
+However, it is also possible to install the repository from the source, through
+the `setup.py` utility:
+
+```
+$ python setup.py install
+```
