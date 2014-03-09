@@ -13,9 +13,6 @@ setup(
         "twython >= 3.1.2"
     ],
     long_description="""
-Spout
-====
-
 Spout is a small and simple framework that makes it easy to work with data
 streams in Python. In particular, Spout was designed with the processing and
 consumption of live data sources in mind.
@@ -25,12 +22,12 @@ How it works
 ------------
 
 At the heart of Spout is the concept of a Stream (which is defined in an
-abstract `Stream` class). This defines the basic operations that can be
+abstract Stream class). This defines the basic operations that can be
 performed upon a data stream:
 
 Mapping
     The items in one stream can me "mapped" to another stream. This is done by
-    applying a supplied `Function` to each item in the input stream, to produce
+    applying a supplied Function to each item in the input stream, to produce
     another output stream.
 
     stream.map(Function)
@@ -38,7 +35,7 @@ Mapping
 Filtering
     The items in a stream can be "filtered", so that the resultant stream only
     contains items that match a given criteria. This is done by using a supplied
-    `Predicate` to test each item in the input stream, and copies it to the output
+    Predicate to test each item in the input stream, and copies it to the output
     stream if it passes the test criteria.
 
     stream.filter(Predicate)
@@ -101,12 +98,12 @@ Installation
 ------------
 
 Spout is available in the Python Package Index (PyPI), and so the easiest way to
-install it is through `pip`:
+install it is through pip:
 
     $ pip install spout
 
 However, it is also possible to install the repository from the source, through
-the `setup.py` utility:
+the setup.py utility:
 
     $ python setup.py install
 """,
