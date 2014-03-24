@@ -115,4 +115,4 @@ Credits
 
 The inspiration for Spout's [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface) came largely from the
 [OpenIMAJ](http://www.openimaj.org/)
-(streaming framework)[http://www.openimaj.org/apidocs/org/openimaj/util/stream/package-summary.html].
+[streaming framework](http://www.openimaj.org/apidocs/org/openimaj/util/stream/package-summary.html).
