@@ -22,11 +22,11 @@ How it works
 ------------
 
 At the heart of Spout is the concept of a Stream (which is defined in an
-abstract Stream class). This defines the basic operations that can be
+abstract `Stream` class). This defines the basic operations that can be
 performed upon a data stream:
 
 Mapping
-    The items in one stream can me "mapped" to another stream. This is done by
+    The items in one stream can be "mapped" to another stream. This is done by
     applying a supplied Function to each item in the input stream, to produce
     another output stream.
 
@@ -74,7 +74,7 @@ and pass these to the .filter() and .map() functions:
 
     from spout.sources import FileInputStream
     from spout.structs import Function, Predicate
-    from spout.utils import PrintOperation
+    from spout.outputs import PrintOperation
 
 
     class StartsWithDigit(Predicate):
@@ -88,9 +88,9 @@ and pass these to the .filter() and .map() functions:
 
 
     s = FileInputStream("test.txt")
-    s \\
-        .filter(StartsWithDigit()) \\
-        .map(StripFirstChar()) \\
+    s \
+        .filter(StartsWithDigit()) \
+        .map(StripFirstChar()) \
         .for_each(PrintOperation())
 
 
@@ -106,5 +106,12 @@ However, it is also possible to install the repository from the source, through
 the setup.py utility:
 
     $ python setup.py install
+
+
+Credits
+-------
+
+The inspiration for Spout's fluent interface came largely from the OpenIMAJ streaming framework.
+http://www.openimaj.org/
 """,
 )
