@@ -16,7 +16,7 @@ abstract `Stream` class). This defines the basic operations that can be
 performed upon a data stream:
 
 ### Mapping
-The items in one stream can me "mapped" to another stream. This is done by
+The items in one stream can be "mapped" to another stream. This is done by
 applying a supplied `Function` to each item in the input stream, to produce
 another output stream.
 
@@ -109,3 +109,10 @@ the `setup.py` utility:
 ```
 $ python setup.py install
 ```
+
+Credits
+-------
+
+The inspiration for Spout's [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface) came largely from the
+[OpenIMAJ](http://www.openimaj.org/)
+[streaming framework](http://www.openimaj.org/apidocs/org/openimaj/util/stream/package-summary.html).
