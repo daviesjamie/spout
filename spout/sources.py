@@ -74,6 +74,7 @@ class TweetStream(BufferedStream):
         self.source.disconnect()
         self.worker.terminate()
 
+
     class TweetSource(TwythonStreamer):
         """
         Acts as the 'listener' to the official Twitter Sample stream.
@@ -89,5 +90,4 @@ class TweetStream(BufferedStream):
 
         def on_error(self, status_code, data):
             sys.stderr.write(status_code, data)
-
 

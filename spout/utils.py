@@ -1,14 +1,6 @@
 from structs import Operation, Predicate
 
 
-class PrintOperation(Operation):
-    """
-    Simple operation to print whatever input is supplied.
-    """
-    def perform(self, obj):
-        print obj
-
-
 class TruePredicate(Predicate):
     """
     Simple predicate that always returns True.
