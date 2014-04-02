@@ -37,7 +37,7 @@ stream.filter(Predicate)
 ### Processing (Consuming)
 The items in a stream are used in some calculations or functionality that
 provides no further output to the stream. This is done by applying the supplied
-Operation to each item in the stream.
+`Operation` to each item in the stream.
 
 ```python
 stream.for_each(Operation)
