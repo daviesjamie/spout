@@ -23,3 +23,15 @@ class FileOutputOperation(Operation):
     def __del__(self):
         self.output.flush()
         self.output.close()
+
+
+class JSONFileOutputOperation(FileOutputOperation):
+    """
+    Operation that writes all items it receives as JSON objects on separate lines in a file.
+    """
+    def __init__(self, filename):
+        super(JSONFileOutputOperation, self).__init__(filename)
+
+
+    def perform(self, obj):
+        self.output.write(json.dumps(obj))
