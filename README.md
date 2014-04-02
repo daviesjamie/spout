@@ -73,7 +73,7 @@ and pass these to the `.filter()` and `.map()` functions:
 ```python
 from spout.sources import FileInputStream
 from spout.structs import Function, Predicate
-from spout.utils import PrintOperation
+from spout.outputs import PrintOperation
 
 
 class StartsWithDigit(Predicate):
