@@ -35,3 +35,6 @@ class JSONFileOutputOperation(FileOutputOperation):
 
     def perform(self, obj):
         self.output.write(json.dumps(obj) + '\n')
+
+    def __del__(self):
+        super(JSONFileOutputOperation, self).__init__(filename)
