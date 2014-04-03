@@ -8,7 +8,7 @@ class Stream(object):
 
     __metaclass__ = abc.ABCMeta
 
-    def for_each(self, operation, limit=0):
+    def for_each(self, operation, limit=0, verbose=False):
         """
         Applies the given Operation to each item in the stream. The Operation executes on the
         items in the stream in the order that they appear in the stream.
@@ -21,6 +21,8 @@ class Stream(object):
             while self.has_next():
                 operation.perform(self.next())
                 count += 1
+                if verbose:
+                    print count
                 if count >= limit:
                     break
         else:
