@@ -18,7 +18,7 @@ class FileOutputOperation(Operation):
         self.output = open(filename, 'w')
 
     def perform(self, obj):
-        self.output.write(obj)
+        self.output.write(obj + '\n')
 
     def __del__(self):
         self.output.flush()
@@ -34,4 +34,4 @@ class JSONFileOutputOperation(FileOutputOperation):
 
 
     def perform(self, obj):
-        self.output.write(json.dumps(obj))
+        self.output.write(json.dumps(obj) + '\n')
