@@ -59,4 +59,4 @@ class QueueBufferedQueue(BufferedQueue):
         return self.queue.get(True)
 
     def remaining_capacity(self):
-        return self.remaining_capacity() - self.queue.qsize()
+        return self.max_size - self.queue.qsize()

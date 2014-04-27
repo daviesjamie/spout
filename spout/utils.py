@@ -1,4 +1,4 @@
-from structs import Operation, Predicate
+from structs import Operation, Predicate, Function
 
 
 class TruePredicate(Predicate):
@@ -7,6 +7,22 @@ class TruePredicate(Predicate):
     """
     def test(self, obj):
         return True
+
+
+class FalsePredicate(Predicate):
+    """
+    Simple predicate that always returns False.
+    """
+    def test(self, obj):
+        return False
+
+
+class PassThroughFunction(Function):
+    """
+    Simple function that returns everything given to it.
+    """
+    def apply(self, input):
+        return input
 
 
 class NullOperation(Operation):
