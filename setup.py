@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="spout",
-    version="0.1.5",
+    version="0.1.6",
     author="Jamie Davies",
     author_email="jamie@jamiedavies.me",
     packages=['spout'],
