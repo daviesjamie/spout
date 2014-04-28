@@ -89,5 +89,5 @@ class TweetStream(BufferedStream):
                 self.publish_stream.register(data)
 
         def on_error(self, status_code, data):
-            sys.stderr.write(status_code, data)
+            sys.stderr.write('{0} - {1}'.format(status_code, data))
 
